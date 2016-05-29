@@ -1,5 +1,5 @@
 .PHONY: all install clean cards score js
-all: install clean cards score js
+all: install cards score js
 
 node := ${CURDIR}/node_modules
 all_sets := ${CURDIR}/data/AllSets.json

@@ -13,6 +13,7 @@ let App = {
     id: null,
     name: 'ninja',
 
+    numUsers: 0,
     numPlayers: 0,
     numActiveGames: 0,
 
@@ -41,6 +42,14 @@ let App = {
     filetype: 'txt',
     side: false,
     sort: 'color',
+
+    get didGameStart() {
+      // both round === 0 and round is undefined
+      return App.state.round
+    },
+    get isGameFinished() {
+      return App.state.round === -1
+    },
   },
 
   init(router) {

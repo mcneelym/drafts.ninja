@@ -73,8 +73,8 @@ function content() {
     })
   ]
 
-  let cards = _.seq(15, 8).map(x => d.option({}, x))
-  let packs = _.seq(12, 3).map(x => d.option({}, x))
+  let cards = _.seq(30, 4).map(x => d.option({}, x))
+  let packs = _.seq(15, 1).map(x => d.option({}, x))
   let cubeDraft = d.div({},
     d.select({ valueLink: App.link('cards') }, cards),
     ' cards ',

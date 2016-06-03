@@ -14,9 +14,9 @@ function transform(cube, seats, type) {
 
   assert(typeof list === 'string', 'typeof list')
   assert(typeof cards === 'number', 'typeof cards')
-  assert(5 <= cards && cards <= 30, 'cards range')
+  assert(4 <= cards && cards <= 30, 'cards range')
   assert(typeof packs === 'number', 'typeof packs')
-  assert(3 <= packs && packs <= 12, 'packs range')
+  assert(1 <= packs && packs <= 15, 'packs range')
 
   list = list.split('\n').map(_.ascii)
 
